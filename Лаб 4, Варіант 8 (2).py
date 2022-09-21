@@ -5,6 +5,6 @@ def func1(x1,x2,x3):
 x = float(input("Введіть значення x: "))
 y = float(input("Введіть значення y: "))
 m = float(input("Введіть значення m: "))
-z = func1(x, y, m)
-print(z)
+w = func1(x, y, m)
+print(w)
 input()
