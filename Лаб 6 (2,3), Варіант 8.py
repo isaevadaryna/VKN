@@ -14,3 +14,4 @@ d = 0
 for k in range(0,len(list_items)):
     d += list_items[k]
 print("Середне арифметичне = " + str(d/len(list_items)))
+print(list_items)
