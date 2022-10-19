@@ -1,12 +1,23 @@
 from array import *
 import random
+import math
 a = int(input("Введіть розмір масиву: "))
-masiv = array('i', [a])
+b= 1
+v = 1
+k = 0
+masiv = array('i', [])
 for i in range(a):
-    masiv1 = random.randint(1,10)
-    print(masiv1)
+    x = random.randint(1,10)
+    masiv.append(x)
+print(masiv)
 for c in masiv:
-    if c/2 in masiv:
-        b = (c*c)**(1./len(c*c))
-    print("Середне геометричне", str(b))
+    if c%2 == 0:
+        print("Масив має парні числа: ", c)
+        b = b*c
+        k +=1
+if k>0:
+    v = math.pow(b,(1./k))
+    print("Середне геометричне", str(v))
+else:
+    print("Неможливо становити середне геометричне")
 
